@@ -1,0 +1,10 @@
+packages:
+- package: tnightengale/dbt_meta_testing
+  version: 0.3.6
+- package: dbt-labs/dbt_utils
+  version: 1.1.0
+- package: dbt-labs/audit_helper
+  version: 0.9.0
+- package: dbt-labs/codegen
+  version: 0.9.0
+sha1_hash: f0f1a37d1a3d89fa670e4804fad6fae9117d75e3
