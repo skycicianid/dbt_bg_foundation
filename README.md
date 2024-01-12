@@ -13,3 +13,20 @@ Try running the following commands:
 - Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
 - Find [dbt events](https://events.getdbt.com) near you
 - Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+
+
+### Example profile.ymp
+
+dbt_bg_foundation:
+  outputs:
+    dev:
+      dataset: <GCP_DATASET>
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: EU
+      method: oauth
+      priority: interactive
+      project: <GCP_PROJECT>
+      threads: 2
+      type: bigquery
+  target: dev
