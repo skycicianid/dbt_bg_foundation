@@ -5,4 +5,4 @@ select
     status,
     -- amount is stored in cents, convert it to dollars
     amount / 100 as amount
-from {{ source('dciciani', 'payments') }}
+from {{ source('davide_dbt', 'payments') }}

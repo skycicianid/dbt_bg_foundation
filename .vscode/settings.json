@@ -1,4 +1,5 @@
 {
     "dbt.queryLimit": 500,
-    "dbt.enableNewLineagePanel": false
+    "dbt.enableNewLineagePanel": false,
+    "python.pythonPath": "venv/bin/python"
 }

@@ -1,0 +1,13 @@
+dbt_bg_foundation:
+ outputs:
+   dev:
+     dataset: dbt_test_dev  # name of dataset
+     job_execution_timeout_seconds: 300
+     job_retries: 1
+     location: EU
+     method: oauth
+     priority: interactive
+     project: skyita-da-daita-dev #schema or gcp projet
+     threads: 1
+     type: bigquery
+ target: dev

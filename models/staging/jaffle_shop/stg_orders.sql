@@ -5,7 +5,7 @@ with orders as (
         user_id as customer_id,
         order_date,
         status
-    from  {{ source('dciciani','orders') }}
+    from  {{ source('davide_dbt','orders') }}
 )
 
 select * from orders

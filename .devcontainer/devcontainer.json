@@ -1,0 +1,40 @@
+{
+	"name": "ita-data-dbt-example",
+	"build": {
+		// Path is relative to the devcontainer.json file.
+		"dockerfile": "Dockerfile",
+		"context": ".."
+		
+	},
+	"mounts": [
+		"source=${localEnv:HOME}/.config/gcloud,target=/root/.config/gcloud,type=bind,consistency=delegated",
+		"source=${localWorkspaceFolder}/.devcontainer/profiles.yml,target=/root/.dbt/profiles.yml,type=bind,consistency=cached"
+	],
+	"postCreateCommand": "chmod +x .devcontainer/init_dev_container.sh && .devcontainer/init_dev_container.sh",
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	"features": {
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"ms-toolsai.jupyter",
+				"ms-python.vscode-pylance",
+				"magicstack.MagicPython",
+				"njpwerner.autodocstring",
+				"littlefoxteam.vscode-python-test-adapter",
+				"klorenz.vscode-poetry",
+				"ms-python.flake8",
+				"ms-python.black-formatter",
+				"eamodio.gitlens",
+				"innoverio.vscode-dbt-power-user"
+			]
+			
+		}
+	}
+}
+
+
+

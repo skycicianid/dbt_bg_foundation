@@ -38,6 +38,6 @@ models:
     marts:
       +required_tests: {"relationship.*" : 1} # this required the is specific to "core" models only
       core:
-       +materialized: table
+       +materialized: incremental
     staging:
       +materialized: view

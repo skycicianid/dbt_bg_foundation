@@ -9,7 +9,7 @@ with customers as (
         first_name,
         last_name
 
-    from  {{ source('dciciani','customers') }}
+    from  {{ source('davide_dbt','customers') }}
 
 )
 

@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: dciciani
+  - name: davide_dbt
     tables:
       - name: payments
         description: Raw of stripe payments data
