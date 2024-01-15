@@ -1,0 +1,42 @@
+version: 2
+
+seeds:
+  - name: orders
+    description: orders table description
+    config:
+      column_types:
+        id: STRING 
+    columns:
+      - name: id
+        description: order id
+        tests: 
+          - not_null
+          - length:
+              len: 3
+      - name: first_name
+      - name: last_name
+        
+  - name: customers
+    description: customer table description  
+    columns:
+      - name: id
+        description: order id
+        tests: 
+          - not_null
+
+      - name: user_id
+      - name: order_date
+      - name: status
+
+  - name: payments
+    description: payments table description  
+    columns:
+      - name: ID
+        description: payments id 
+        tests: 
+          - not_null
+      - name: ORDERID
+      - name: PAYMENTMETHOD
+      - name: STATUS
+      - name: AMOUNT
+      - name: CREATED
